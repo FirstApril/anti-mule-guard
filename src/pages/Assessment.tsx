@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { FileText, AlertTriangle, CheckCircle, ArrowLeft, ArrowRight } from "lucide-react";
+import { FileText, AlertTriangle, CheckCircle, ArrowLeft, ArrowRight, Home } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
@@ -82,6 +82,7 @@ const Assessment = () => {
   };
 
   const nextQuestion = () => {
+    // Allow moving to next question even without answer - don't block users
     if (currentQuestion < questions.length - 1) {
       setCurrentQuestion(currentQuestion + 1);
     } else {
@@ -273,20 +274,32 @@ const Assessment = () => {
           </CardContent>
         </Card>
 
-        <div className="flex justify-between">
-          <Button 
-            variant="outline" 
-            onClick={prevQuestion}
-            disabled={currentQuestion === 0}
-          >
-            <ArrowLeft className="mr-2 h-4 w-4" />
-            ก่อนหน้า
-          </Button>
+        <div className="flex justify-between items-center">
+          <div className="flex space-x-2">
+            {currentQuestion === 0 ? (
+              <Button variant="outline" asChild>
+                <Link to="/">
+                  <Home className="mr-2 h-4 w-4" />
+                  หน้าแรก
+                </Link>
+              </Button>
+            ) : (
+              <Button variant="outline" onClick={prevQuestion}>
+                <ArrowLeft className="mr-2 h-4 w-4" />
+                ก่อนหน้า
+              </Button>
+            )}
+            
+            {currentQuestion > 0 && (
+              <Button variant="ghost" asChild>
+                <Link to="/">
+                  <Home className="h-4 w-4" />
+                </Link>
+              </Button>
+            )}
+          </div>
           
-          <Button 
-            onClick={nextQuestion}
-            disabled={!answers[question.id]}
-          >
+          <Button onClick={nextQuestion}>
             {currentQuestion === questions.length - 1 ? "ดูผลลัพธ์" : "ถัดไป"}
             <ArrowRight className="ml-2 h-4 w-4" />
           </Button>

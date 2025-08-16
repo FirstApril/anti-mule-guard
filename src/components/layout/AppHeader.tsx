@@ -7,9 +7,12 @@ export function AppHeader() {
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container mx-auto flex h-16 items-center justify-between px-4">
-        <Link to="/" className="flex items-center space-x-2">
-          <Shield className="h-6 w-6 text-primary" />
-          <span className="font-bold text-lg">ระบบยุติบัญชีม้า</span>
+        <Link to="/" className="flex items-center space-x-3">
+          <Shield className="h-8 w-8 text-primary" />
+          <div className="flex flex-col">
+            <span className="text-xl font-bold text-foreground">เว็บไถ่บาป</span>
+            <span className="text-xs text-muted-foreground">powered by กรุงศรี</span>
+          </div>
         </Link>
 
         <NavigationMenu className="hidden md:flex">

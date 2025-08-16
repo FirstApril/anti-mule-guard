@@ -3,16 +3,19 @@ import { Link } from "react-router-dom";
 
 export function AppFooter() {
   return (
-    <footer className="border-t bg-gray-50">
-      <div className="container mx-auto px-4 py-8">
+    <footer className="border-t bg-gray-50/80 backdrop-blur-sm mt-auto">
+      <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="space-y-4">
-            <div className="flex items-center space-x-2">
+            <div className="flex items-center space-x-3">
               <Shield className="h-5 w-5 text-primary" />
-              <span className="font-semibold">ระบบยุติบัญชีม้า</span>
+              <div className="flex flex-col">
+                <span className="font-semibold">เว็บไถ่บาป</span>
+                <span className="text-xs text-muted-foreground">powered by กรุงศรี</span>
+              </div>
             </div>
             <p className="text-sm text-muted-foreground">
-              แพลตฟอร์มช่วยเหลือผู้ที่ตกเป็นเหยื่อบัญชีม้า ดำเนินการอย่างปลอดภัยและเป็นความลับ
+              แพลตฟอร์มไถ่บาปและช่วยเหลือผู้ที่ตกเป็นเหยื่อการหลอกลวง ดำเนินการด้วยความเข้าใจและเห็นอกเห็นใจ
             </p>
           </div>
 
@@ -52,7 +55,7 @@ export function AppFooter() {
         <div className="mt-8 pt-8 border-t">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-2 md:space-y-0">
             <p className="text-sm text-muted-foreground">
-              © 2024 ระบบยุติบัญชีม้า สงวนลิขสิทธิ์
+              © 2024 เว็บไถ่บาป powered by กรุงศรี สงวนลิขสิทธิ์
             </p>
             <div className="flex items-center space-x-2 text-xs text-muted-foreground">
               <FileText className="h-3 w-3" />
