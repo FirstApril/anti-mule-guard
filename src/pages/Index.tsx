@@ -236,11 +236,11 @@ const Index = () => {
                     <div className="space-y-4">
                       <div className="p-4 bg-destructive/10 rounded-lg">
                         <h4 className="font-semibold text-destructive mb-2">โทษทางอาญา</h4>
-                        <p className="text-sm">จำคุกได้สูงสุด 10 ปี และ/หรือปรับสูงสุด 200,000 บาท</p>
+                        <p className="text-sm">จำคุกสูงสุด 3 ปี หรือ ปรับสูงสุด 300,000 บาท หรือ ทั้งจำทั้งปรับ</p>
                       </div>
                       <div className="p-4 bg-warning/10 rounded-lg">
                         <h4 className="font-semibold text-warning mb-2">ผลกระทบทางการเงิน</h4>
-                        <p className="text-sm">บัญชีถูกระงับ ขึ้นบัญชีดำ ไม่สามารถใช้บริการทางการเงินได้</p>
+                        <p className="text-sm">บัญชีทั้งหมดถูกระงับ ไม่สามารถใช้บริการทางการเงินผ่านธนาคารได้</p>
                       </div>
                       <div className="p-4 bg-info/10 rounded-lg">
                         <h4 className="font-semibold text-info mb-2">ผลกระทบต่อการใช้ชีวิต</h4>
@@ -334,7 +334,7 @@ const Index = () => {
               <Button variant="outline" size="lg" className="text-lg px-8 py-6 bg-white/80 backdrop-blur-sm shadow-lg border-white/50" asChild>
                 <Link to="/login">
                   <Phone className="mr-2 h-5 w-5" />
-                  หรือโทร 1111
+                  หรือโทร AOC 1411
                 </Link>
               </Button>
             </div>
