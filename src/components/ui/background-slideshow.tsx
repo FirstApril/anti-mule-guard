@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import bgSlide1 from '@/assets/grandmacriedwithsmile_-1_edit_99856145711490.png';
-import bgSlide2 from '@/assets/bg-slide-1.jpg';
-import bgSlide3 from '@/assets/bg-slide-1.jpg';
+import bgSlide2 from '@/assets/IMG_20250817_103156.png';
+import bgSlide3 from '@/assets/IMG_20250817_103441.png';
 
 const backgroundImages = [bgSlide1, bgSlide2, bgSlide3];
 
