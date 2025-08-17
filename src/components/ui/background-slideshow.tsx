@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import bgSlide1 from '@/assets/grandmacriedwithsmile_-1.png';
+import bgSlide1 from '@/assets/grandmacriedwithsmile_-1_edit_99856145711490.png';
 import bgSlide2 from '@/assets/bg-slide-1.jpg';
 import bgSlide3 from '@/assets/bg-slide-1.jpg';
 
