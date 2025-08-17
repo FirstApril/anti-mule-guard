@@ -11,7 +11,7 @@ export function AppFooter() {
               <Shield className="h-5 w-5 text-primary" />
               <div className="flex flex-col">
                 <span className="font-semibold">เว็บไถ่บาป</span>
-                <span className="text-xs text-muted-foreground">powered by กรุงศรี</span>
+                <span className="text-xs text-muted-foreground">powered by RobloxMaster</span>
               </div>
             </div>
             <p className="text-sm text-muted-foreground">
@@ -38,11 +38,11 @@ export function AppFooter() {
           </div>
 
           <div className="space-y-4">
-            <h3 className="font-semibold">ติดต่อเรา</h3>
+            <h3 className="font-semibold">ติดต่อAOC</h3>
             <div className="space-y-2 text-sm">
               <div className="flex items-center space-x-2 text-muted-foreground">
                 <Phone className="h-4 w-4" />
-                <span>1111 (24 ชั่วโมง)</span>
+                <span>1411 (24 ชั่วโมง)</span>
               </div>
               <div className="flex items-center space-x-2 text-muted-foreground">
                 <Mail className="h-4 w-4" />
@@ -55,7 +55,7 @@ export function AppFooter() {
         <div className="mt-8 pt-8 border-t">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-2 md:space-y-0">
             <p className="text-sm text-muted-foreground">
-              © 2024 เว็บไถ่บาป powered by กรุงศรี สงวนลิขสิทธิ์
+              © 2025 เว็บไถ่บาป powered by RobloxMaster
             </p>
             <div className="flex items-center space-x-2 text-xs text-muted-foreground">
               <FileText className="h-3 w-3" />
