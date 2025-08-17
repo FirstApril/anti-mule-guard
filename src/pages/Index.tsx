@@ -153,7 +153,7 @@ const Index = () => {
               <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
                 ทำความเข้าใจเรื่องบัญชีม้า
               </h2>
-              <p className="text-lg text-muted-foreground">
+              <p className="text-lg text-foreground">
                 ข้อมูลสำคัญที่คุณควรรู้เพื่อปกป้องตัวเองและครอบครัว
               </p>
             </div>
