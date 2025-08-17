@@ -11,7 +11,7 @@ export const BackgroundSlideshow = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % backgroundImages.length);
-    }, 200000);
+    }, 30000);
 
     return () => clearInterval(interval);
   }, []);
