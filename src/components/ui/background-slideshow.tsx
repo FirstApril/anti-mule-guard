@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import bgSlide1 from '@/assets/bg-slide-1.jpg';
-import bgSlide2 from '@/assets/bg-slide-2.jpg';
-import bgSlide3 from '@/assets/bg-slide-3.jpg';
+import bgSlide2 from '@/assets/bg-slide-1.jpg';
+import bgSlide3 from '@/assets/bg-slide-1.jpg';
 
 const backgroundImages = [bgSlide1, bgSlide2, bgSlide3];
 
@@ -11,7 +11,7 @@ export const BackgroundSlideshow = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % backgroundImages.length);
-    }, 5000);
+    }, 200000);
 
     return () => clearInterval(interval);
   }, []);

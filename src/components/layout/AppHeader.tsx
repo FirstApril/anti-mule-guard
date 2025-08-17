@@ -11,7 +11,7 @@ export function AppHeader() {
           <Shield className="h-8 w-8 text-primary" />
           <div className="flex flex-col">
             <span className="text-xl font-bold text-foreground">เว็บไถ่บาป</span>
-            <span className="text-xs text-muted-foreground">powered by กรุงศรี</span>
+            <span className="text-xs text-muted-foreground">Powered By RobloxMaster</span>
           </div>
         </Link>
 
